@@ -16,7 +16,12 @@ struct LandmarkDetail: View {
         ScrollView {
             MapView(coordinate: landmark.locationCoordinate)
                 .ignoresSafeArea(edges: .top)
-                .frame(height: 550)
+                .frame(height: 450)
+//                .addAnnotation(
+//                    MapAnnotation(coordinate: landmark.locationCoordinate) {
+//                        Text(landmark.name)
+//                    }
+//                )
 
             VStack(alignment: .leading) {
                 HStack {
