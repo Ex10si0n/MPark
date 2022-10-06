@@ -32,7 +32,7 @@ struct FeaturesRow: View {
                 }
             }
             Spacer()
-            MapView(coordinate: landmark.locationCoordinate).frame(width: 100, height: 100, alignment: .bottom).ignoresSafeArea().allowsHitTesting(false)
+            MapView(coordinate: landmark.locationCoordinate, name: landmark.name).frame(width: 100, height: 100, alignment: .bottom).ignoresSafeArea().allowsHitTesting(false)
 
         }.frame(height: 100)
     }

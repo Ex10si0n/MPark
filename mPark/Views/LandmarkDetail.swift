@@ -14,10 +14,9 @@ struct LandmarkDetail: View {
 
     var body: some View {
         ScrollView {
-            MapView(coordinate: landmark.locationCoordinate)
+            MapView(coordinate: landmark.locationCoordinate, name: landmark.name)
                 .ignoresSafeArea(edges: .top)
                 .frame(height: 450)
-                .allowsHitTesting(false)
 
             VStack(alignment: .leading) {
                 HStack {

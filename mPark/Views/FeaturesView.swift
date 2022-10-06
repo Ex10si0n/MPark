@@ -46,6 +46,7 @@ struct FeaturesView: View {
                         utterance.rate = 0.55
                         synthesizer.speak(utterance)
                     }) {
+                        Text("播報")
                         Image(systemName: "ellipsis.bubble")
                     }
                 }
